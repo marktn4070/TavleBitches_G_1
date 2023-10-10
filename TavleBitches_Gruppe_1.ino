@@ -1,6 +1,9 @@
 sdasdas
+Jeg hedder *****
+Hej hej
 
 mark
+<<<<<<< HEAD
 
 
 
@@ -11,3 +14,7 @@ kk
 kk
 
 k
+=======
+Testaaa
+dfggfzfx
+>>>>>>> 2edd00f39894f140c9376ab9ddacfe7fa824a6cb
