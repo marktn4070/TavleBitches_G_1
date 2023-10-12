@@ -28,14 +28,14 @@ GPIO.setup(DirectionPin1,GPIO.OUT)
 GPIO.setup(DirectionPin2,GPIO.OUT)
 GPIO.setup(DirectionPin3,GPIO.OUT)
 
+
+pi_pwm = GPIO.PWM(SpeedPin,1000)		#create PWM instance with frequency
+pi_pwm.start(0)
+
+pi_pwm1 = GPIO.PWM(SpeedPin1,1000)		#create PWM instance with frequency
+pi_pwm1.start(0)			
+
 def koer():
-
-    pi_pwm = GPIO.PWM(SpeedPin,1000)		#create PWM instance with frequency
-    pi_pwm.start(0)
-
-    pi_pwm1 = GPIO.PWM(SpeedPin1,1000)		#create PWM instance with frequency
-    pi_pwm1.start(0)			
-
     GPIO.output(DirectionPin, True)
     GPIO.output(DirectionPin1, True)			
 
