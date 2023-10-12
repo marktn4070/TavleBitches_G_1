@@ -43,7 +43,7 @@ def koer():
     GPIO.output(DirectionPin3, True)
 
 
-    #start PWM of required Duty Cycle 
+    #start PWM of required Duty Cycle. 
     #while True:
     for duty in range(0,101,1):
             pi_pwm.ChangeDutyCycle(duty) #provide duty cycle in the range 0-100
