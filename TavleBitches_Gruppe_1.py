@@ -56,14 +56,12 @@ while True:
 
 
 
-
-
-linefollower1 = 23
-linefollower2 = 24
+linefollower1 = 16
+linefollower2 = 18
 
 
 GPIO.setwarnings(False)
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BOARD)
 
 GPIO.setup(linefollower1,GPIO.IN)
 GPIO.setup(linefollower2,GPIO.IN)
