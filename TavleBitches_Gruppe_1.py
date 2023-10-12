@@ -103,11 +103,11 @@ GPIO.setup(linefollower2,GPIO.IN)
 
 
 
-if((linefollower1 == 0) && (linefollower2 == 1)):
+if((linefollower1 == 0) and (linefollower2 == 1)):
     dven()
-elif((linefollower1 == 1) && (linefollower2 == 0)):
+elif((linefollower1 == 1) and (linefollower2 == 0)):
     dhoej()
-elif((linefollower1 == 0) && (linefollower2 == 0)):
+elif((linefollower1 == 0) and (linefollower2 == 0)):
     koer()
 else:
     koer()
