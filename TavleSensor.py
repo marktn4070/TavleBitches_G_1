@@ -9,7 +9,7 @@ GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 
 GPIO.setup(linefollower1,GPIO.IN)
-GPIO.setup(linefollower2,GPIO,IN)
+GPIO.setup(linefollower2,GPIO.IN)
 try:
    while True:
     Venstre = int (GPIO.input(linefollower1))
