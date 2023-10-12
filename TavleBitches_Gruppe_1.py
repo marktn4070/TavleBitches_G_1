@@ -20,6 +20,8 @@ DirectionPin1 = 13
 DirectionPin2 = 29
 DirectionPin3 = 31
 
+
+
 GPIO.setwarnings(False)			#disable warnings
 GPIO.setmode(GPIO.BOARD)	#set pin numbering system
 
@@ -62,23 +64,26 @@ while True:
 
 
         #______________Sensor_start_____________
-A = 2
+linefollower1 = 9
+linefollower2 = 10
+
 
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
 GPIO.cleanup()
 
 while True:
-   GPIO.setup(A,GPIO.OUT)
-   GPIO.output(A,True)
+   GPIO.setup(linefollower1,GPIO.OUT)
+   GPIO.output(linefollower1,True)
    sleep(0.00001)
-   GPIO.output(A,False)
-   GPIO.setup(A,GPIO.IN)
+   GPIO.output(linefollower1,False)
+   GPIO.setup(linefollower1,GPIO.IN)
    timest = time.time_ns()
-   while (GPIO.input(A)==True and ((time.time_ns()) - timest < 3000000)):
+   while (GPIO.input(linefollower1)==True and ((time.time_ns()) - timest < 3000000)):
       timeCalc = (time.time_ns()) - timest 
       print(timeCalc)
       sleep(0.25)
+      
    
 
 
