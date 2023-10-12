@@ -1,3 +1,5 @@
+import RPi.GPIO as GPIO
+
 linefollower1 = 9
 linefollower2 = 10
 
