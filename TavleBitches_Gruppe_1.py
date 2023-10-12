@@ -54,3 +54,26 @@ while True:
         pi_pwm1.ChangeDutyCycle(duty)
         sleep(0.1)
 
+
+
+
+
+linefollower1 = 23
+linefollower2 = 24
+
+
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BCM)
+
+GPIO.setup(linefollower1,GPIO.IN)
+GPIO.setup(linefollower2,GPIO.IN)
+try:
+   while True:
+    Venstre = int (GPIO.input(linefollower1))
+    print(Venstre)
+    Højre = int (GPIO.input(linefollower2))
+    print(Højre)
+    time.sleep(0.1)
+except KeyboardInterrupt:
+  pass
+GPIO.cleanup()
