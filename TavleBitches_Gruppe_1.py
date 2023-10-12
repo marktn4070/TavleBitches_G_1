@@ -13,7 +13,8 @@ DirectionPin1 = 13
 DirectionPin2 = 29
 DirectionPin3 = 31
 
-
+linefollower1 = 16
+linefollower2 = 18
 
 GPIO.setwarnings(False)			#disable warnings
 GPIO.setmode(GPIO.BOARD)	#set pin numbering system
@@ -27,7 +28,6 @@ GPIO.setup(DirectionPin,GPIO.OUT)
 GPIO.setup(DirectionPin1,GPIO.OUT)
 GPIO.setup(DirectionPin2,GPIO.OUT)
 GPIO.setup(DirectionPin3,GPIO.OUT)
-
 
 pi_pwm = GPIO.PWM(SpeedPin,1000)		#create PWM instance with frequency
 pi_pwm.start(0)
@@ -58,7 +58,6 @@ def koer():
     #         pi_pwm1.ChangeDutyCycle(duty)
     #         sleep(0.1)
 
-
 def dven():
 		
 
@@ -84,11 +83,6 @@ def dhoej():
     pi_pwm.ChangeDutyCycle(0)
     pi_pwm1.ChangeDutyCycle(100)
     sleep(0.1)
-
-
-
-linefollower1 = 16
-linefollower2 = 18
 
 
 GPIO.setwarnings(False)
