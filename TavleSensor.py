@@ -1,8 +1,8 @@
 import RPi.GPIO as GPIO
 import time
 
-linefollower1 = 8
-linefollower2 = 9
+linefollower1 = 23
+linefollower2 = 24
 
 
 GPIO.setwarnings(False)
