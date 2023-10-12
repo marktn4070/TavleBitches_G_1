@@ -44,6 +44,7 @@ def koer():
     
     pi_pwm.ChangeDutyCycle(100)
     pi_pwm1.ChangeDutyCycle(100)
+    sleep(0.1)
 
     #start PWM of required Duty Cycle. 
     # while True:
@@ -69,6 +70,7 @@ def dven():
 
     pi_pwm.ChangeDutyCycle(100)
     pi_pwm1.ChangeDutyCycle(0)
+    sleep(0.1)
 
 
 def dhoej():
@@ -81,6 +83,7 @@ def dhoej():
 
     pi_pwm.ChangeDutyCycle(0)
     pi_pwm1.ChangeDutyCycle(100)
+    sleep(0.1)
 
 
 
