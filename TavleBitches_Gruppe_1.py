@@ -18,7 +18,7 @@ DirectionPin2 = 29
 DirectionPin3 = 31
 
 GPIO.setwarnings(False)			#disable warnings
-GPIO.setmode(GPIO.BCM)	#set pin numbering system
+GPIO.setmode(GPIO.BOARD)	#set pin numbering system
 
 GPIO.cleanup()
 
