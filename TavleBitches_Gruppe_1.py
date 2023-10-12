@@ -43,25 +43,21 @@ def koer():
     GPIO.output(DirectionPin3, True)
 
 
-#start PWM of required Duty Cycle 
-while True:
-    for duty in range(0,101,1):
-        pi_pwm.ChangeDutyCycle(duty) #provide duty cycle in the range 0-100
-        pi_pwm1.ChangeDutyCycle(duty)
-        sleep(0.1)
-                
-    for duty in range(100,0,-1):
-        pi_pwm.ChangeDutyCycle(duty)
-        pi_pwm1.ChangeDutyCycle(duty)
-        sleep(0.1)
+    #start PWM of required Duty Cycle 
+    #while True:
+        for duty in range(0,101,1):
+            pi_pwm.ChangeDutyCycle(duty) #provide duty cycle in the range 0-100
+            pi_pwm1.ChangeDutyCycle(duty)
+            sleep(0.1)
+                    
+        for duty in range(100,0,-1):
+            pi_pwm.ChangeDutyCycle(duty)
+            pi_pwm1.ChangeDutyCycle(duty)
+            sleep(0.1)
 
 
 def dven():
-    pi_pwm = GPIO.PWM(SpeedPin,1000)		#create PWM instance with frequency
-    pi_pwm.start(0)
-
-    pi_pwm1 = GPIO.PWM(SpeedPin1,800)		#create PWM instance with frequency
-    pi_pwm1.start(0)			
+		
 
     GPIO.output(DirectionPin, True)
     GPIO.output(DirectionPin1, True)			
@@ -72,11 +68,6 @@ def dven():
 
 
 def dhoej():
-    pi_pwm = GPIO.PWM(SpeedPin,800)		#create PWM instance with frequency
-    pi_pwm.start(0)
-
-    pi_pwm1 = GPIO.PWM(SpeedPin1,1000)		#create PWM instance with frequency
-    pi_pwm1.start(0)			
 
     GPIO.output(DirectionPin, True)
     GPIO.output(DirectionPin1, True)			
