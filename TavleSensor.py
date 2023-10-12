@@ -16,7 +16,7 @@ try:
     print(Venstre)
     Højre = int (GPIO.input(linefollower2))
     print(Højre)
-    time.sleep(1)
+    time.sleep(0.1)
 except KeyboardInterrupt:
   pass
 GPIO.cleanup()
