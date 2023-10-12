@@ -28,7 +28,7 @@ GPIO.setup(DirectionPin1,GPIO.OUT)
 GPIO.setup(DirectionPin2,GPIO.OUT)
 GPIO.setup(DirectionPin3,GPIO.OUT)
 
-koer():
+def koer():
 
     pi_pwm = GPIO.PWM(SpeedPin,1000)		#create PWM instance with frequency
     pi_pwm.start(0)
@@ -56,7 +56,7 @@ koer():
 #         sleep(0.1)
 
 
-dven():
+def dven():
     pi_pwm = GPIO.PWM(SpeedPin,1000)		#create PWM instance with frequency
     pi_pwm.start(0)
 
@@ -71,7 +71,7 @@ dven():
 
 
 
-dhoej():
+def dhoej():
     pi_pwm = GPIO.PWM(SpeedPin,800)		#create PWM instance with frequency
     pi_pwm.start(0)
 
@@ -103,11 +103,11 @@ GPIO.setup(linefollower2,GPIO.IN)
 
 
 
-if(linefollower1 == 0 && linefollower2 == 1):
+if((linefollower1 == 0) && (linefollower2 == 1)):
     dven()
-elif(linefollower1 == 1 && linefollower2 == 0):
+elif((linefollower1 == 1) && (linefollower2 == 0)):
     dhoej()
-elif(linefollower1 == 0 && linefollower2 == 0):
+elif((linefollower1 == 0) && (linefollower2 == 0)):
     koer()
 else:
     koer()
@@ -115,11 +115,11 @@ else:
 
 try:
    while True:
-    Venstre = int (GPIO.input(linefollower1))
-    print(Venstre)
-    Højre = int (GPIO.input(linefollower2))
-    print(Højre)
-    time.sleep(0.1)
+        Venstre = int (GPIO.input(linefollower1))
+        print(Venstre)
+        Højre = int (GPIO.input(linefollower2))
+        print(Højre)
+        time.sleep(0.1)
 except KeyboardInterrupt:
   pass
 GPIO.cleanup()
