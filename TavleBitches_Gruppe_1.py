@@ -4,13 +4,6 @@ import time
 from time import sleep
 
 
-
-
-
-#PWM test
-import RPi.GPIO as GPIO
-from time import sleep
-
 SpeedPin = 32
 SpeedPin1 = 33
 # PWM pins
@@ -83,7 +76,7 @@ while True:
       timeCalc = (time.time_ns()) - timest 
       print(timeCalc)
       sleep(0.25)
-      
+
    
 
 
