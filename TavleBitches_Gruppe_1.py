@@ -65,7 +65,7 @@ while True:
 A = 2
 
 GPIO.setwarnings(False)
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BOARD)
 GPIO.cleanup()
 
 while True:
