@@ -1,4 +1,4 @@
-#sensor testdewdee
+#sensor testdewdee21eqwe
 import RPi.GPIO as GPIO
 import time
 from time import sleep
