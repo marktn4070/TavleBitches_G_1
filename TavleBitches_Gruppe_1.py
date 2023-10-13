@@ -42,7 +42,7 @@ def koer():
     GPIO.output(DirectionPin2, True)
     GPIO.output(DirectionPin3, True)
     
-    pi_pwm.ChangeDutyCycle(68)
+    pi_pwm.ChangeDutyCycle(65)
     pi_pwm1.ChangeDutyCycle(70)
     sleep(0.1)
 
