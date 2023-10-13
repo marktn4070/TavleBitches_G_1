@@ -130,9 +130,6 @@ def press(key):
         TurnRight()
     if key == "f":
         StopBil()
-    else:
-        StopBil()
-        print("Vent")
 
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
