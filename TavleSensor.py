@@ -115,6 +115,9 @@ def GoBackward():
 
 def StopBil():
     print("STOP")
+    pi_pwm.ChangeDutyCycle(0)
+    pi_pwm1.ChangeDutyCycle(0)
+
 
 def press(key):
     if key == "w":
@@ -128,6 +131,7 @@ def press(key):
     if key == "f":
         StopBil()
     else:
+        StopBil()
         print("Vent")
 
 GPIO.setwarnings(False)
