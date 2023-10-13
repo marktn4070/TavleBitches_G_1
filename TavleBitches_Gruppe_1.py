@@ -80,8 +80,8 @@ def dhoej():
     GPIO.output(DirectionPin2, True)
     GPIO.output(DirectionPin3, True)
 
-    pi_pwm.ChangeDutyCycle(10)
-    pi_pwm1.ChangeDutyCycle(40)
+    pi_pwm.ChangeDutyCycle(5)
+    pi_pwm1.ChangeDutyCycle(20)
     sleep(0.1)
 
 
