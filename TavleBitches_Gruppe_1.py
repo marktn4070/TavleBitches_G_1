@@ -97,13 +97,13 @@ try:
         print(Venstre)
         Højre = int (GPIO.input(linefollower2))
         print(Højre)
-        if((linefollower1 == 1) and (linefollower2 == 1)):
+        if (Venstre == 1 and Højre == 1):
             koer()
-        elif((linefollower1 == 1) and (linefollower2 == 0)):
+        elif(Venstre == 1 and Højre == 0):
             dhoej()
-        elif((linefollower1 == 0) and (linefollower2 == 0)):
+        elif(Venstre == 0 and Højre == 0):
             koer()
-        elif((linefollower1 == 0) and (linefollower2 == 1)):
+        elif(Venstre == 0 and Højre == 1):
             dven()
         else:
             koer()
