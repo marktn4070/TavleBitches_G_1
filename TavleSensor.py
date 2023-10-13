@@ -122,6 +122,8 @@ def press(key):
         TurnLeft()
     if key == "d":
         TurnRight()
+    else:
+      print("Intet")
 
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
