@@ -141,7 +141,8 @@ GPIO.setup(linefollower1,GPIO.IN)
 GPIO.setup(linefollower2,GPIO.IN)
 
 try:
-   aem = input("Indtast A for auto eller M for manuel")
+   Print("Tryk M for manuel eller N for Auto")
+   listen_keyboard(on_press = press)
    if aem == "a":   
       while True:
         Venstre = int (GPIO.input(linefollower1))
