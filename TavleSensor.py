@@ -141,9 +141,9 @@ GPIO.setup(linefollower1,GPIO.IN)
 GPIO.setup(linefollower2,GPIO.IN)
 
 try:
-   Print("Tryk M for manuel eller N for Auto")
-   listen_keyboard(on_press = press)
-   if aem == "a":   
+    aem = input("Indtast A for auto eller M for manuel")
+    #Print("Tryk M for manuel eller N for Auto")
+    if aem == "a":   
       while True:
         Venstre = int (GPIO.input(linefollower1))
         print(Venstre)
@@ -160,10 +160,10 @@ try:
         else:
             koer()
             print("FEJL")
-   elif aem == "m":
+    elif aem == "m":
       while True:
         listen_keyboard(on_press = press)
-   else:
+    else:
       print("Invalid input!")
 except KeyboardInterrupt:
   pass
