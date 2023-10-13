@@ -67,8 +67,8 @@ def dven():
     GPIO.output(DirectionPin2, True)
     GPIO.output(DirectionPin3, True)
 
-    pi_pwm.ChangeDutyCycle(60) #50
-    pi_pwm1.ChangeDutyCycle(60) #50
+    pi_pwm.ChangeDutyCycle(100) #50
+    pi_pwm1.ChangeDutyCycle(100) #50
     sleep(0.02)
 
 
@@ -80,8 +80,8 @@ def dhoej():
     GPIO.output(DirectionPin2, False)
     GPIO.output(DirectionPin3, False)
 
-    pi_pwm.ChangeDutyCycle(60) #50
-    pi_pwm1.ChangeDutyCycle(60) #50
+    pi_pwm.ChangeDutyCycle(100) #50
+    pi_pwm1.ChangeDutyCycle(100) #50
     sleep(0.02)
 
 
