@@ -113,6 +113,9 @@ def GoBackward():
     pi_pwm.ChangeDutyCycle(100)
     pi_pwm1.ChangeDutyCycle(100)
 
+def StopBil():
+    print("STOP")
+
 def press(key):
     if key == "w":
         GoForward()
@@ -122,8 +125,10 @@ def press(key):
         TurnLeft()
     if key == "d":
         TurnRight()
+    if key == "f":
+        StopBil()
     else:
-        print("Intet")
+        print("Vent")
 
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
