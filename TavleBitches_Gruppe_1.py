@@ -69,7 +69,7 @@ def dven():
 
     pi_pwm.ChangeDutyCycle(50)
     pi_pwm1.ChangeDutyCycle(50)
-    sleep(0.01)
+    sleep(0.1)
 
 
 def dhoej():
@@ -82,7 +82,7 @@ def dhoej():
 
     pi_pwm.ChangeDutyCycle(50)
     pi_pwm1.ChangeDutyCycle(50)
-    sleep(0.01)
+    sleep(0.1)
 
 
 GPIO.setwarnings(False)
