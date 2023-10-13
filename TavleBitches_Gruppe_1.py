@@ -97,7 +97,6 @@ try:
         print(Venstre)
         Højre = int (GPIO.input(linefollower2))
         print(Højre)
-        time.sleep(0.1)
         if((linefollower1 == 0) and (linefollower2 == 1)):
             dven()
         elif((linefollower1 == 1) and (linefollower2 == 0)):
@@ -106,8 +105,8 @@ try:
             koer()
         elif((linefollower1 == 1) and (linefollower2 == 1)):
             koer()
-        else:
-            koer()
+        #else:
+        #    koer()
 except KeyboardInterrupt:
   pass
 GPIO.cleanup()
