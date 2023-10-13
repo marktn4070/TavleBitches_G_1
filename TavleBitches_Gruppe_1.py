@@ -42,8 +42,8 @@ def koer():
     GPIO.output(DirectionPin2, True)
     GPIO.output(DirectionPin3, True)
     
-    pi_pwm.ChangeDutyCycle(30)
-    pi_pwm1.ChangeDutyCycle(30)
+    pi_pwm.ChangeDutyCycle(35)
+    pi_pwm1.ChangeDutyCycle(35)
     sleep(0.1)
 
     #start PWM of required Duty Cycle. 
@@ -67,7 +67,7 @@ def dven():
     GPIO.output(DirectionPin2, True)
     GPIO.output(DirectionPin3, True)
 
-    pi_pwm.ChangeDutyCycle(30)
+    pi_pwm.ChangeDutyCycle(35)
     pi_pwm1.ChangeDutyCycle(0)
     sleep(0.1)
 
@@ -81,7 +81,7 @@ def dhoej():
     GPIO.output(DirectionPin3, True)
 
     pi_pwm.ChangeDutyCycle(0)
-    pi_pwm1.ChangeDutyCycle(30)
+    pi_pwm1.ChangeDutyCycle(35)
     sleep(0.1)
 
 
