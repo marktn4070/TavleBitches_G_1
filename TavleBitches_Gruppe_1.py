@@ -42,8 +42,8 @@ def koer():
     GPIO.output(DirectionPin2, True)
     GPIO.output(DirectionPin3, True)
     
-    pi_pwm.ChangeDutyCycle(70) #45 #70
-    pi_pwm1.ChangeDutyCycle(80) #50 #80
+    pi_pwm.ChangeDutyCycle(95) #45 #70
+    pi_pwm1.ChangeDutyCycle(100) #50 #80
     #sleep(0.1)
 
 def dven():
