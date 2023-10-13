@@ -77,8 +77,8 @@ def TurnLeft():
     GPIO.output(DirectionPin2, True)
     GPIO.output(DirectionPin3, True)
 
-    pi_pwm.ChangeDutyCycle(80)
-    pi_pwm1.ChangeDutyCycle(80)
+    pi_pwm.ChangeDutyCycle(100)
+    pi_pwm1.ChangeDutyCycle(100)
 
 def TurnRight():
     print("Turning Right")
@@ -88,8 +88,8 @@ def TurnRight():
     GPIO.output(DirectionPin2, False)
     GPIO.output(DirectionPin3, False)
 
-    pi_pwm.ChangeDutyCycle(80)
-    pi_pwm1.ChangeDutyCycle(80)
+    pi_pwm.ChangeDutyCycle(100)
+    pi_pwm1.ChangeDutyCycle(100)
 
 def GoForward():
     print("Going Forward")
@@ -110,8 +110,8 @@ def GoBackward():
     GPIO.output(DirectionPin2, False)
     GPIO.output(DirectionPin3, False)
 
-    pi_pwm.ChangeDutyCycle(80)
-    pi_pwm1.ChangeDutyCycle(80)
+    pi_pwm.ChangeDutyCycle(100)
+    pi_pwm1.ChangeDutyCycle(100)
 
 def press(key):
     if key == "w":
