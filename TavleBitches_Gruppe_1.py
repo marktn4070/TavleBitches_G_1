@@ -42,8 +42,8 @@ def koer():
     GPIO.output(DirectionPin2, True)
     GPIO.output(DirectionPin3, True)
     
-    pi_pwm.ChangeDutyCycle(40) #45
-    pi_pwm1.ChangeDutyCycle(50) #50
+    pi_pwm.ChangeDutyCycle(70) #45
+    pi_pwm1.ChangeDutyCycle(80) #50
     #sleep(0.1)
 
     #start PWM of required Duty Cycle. 
