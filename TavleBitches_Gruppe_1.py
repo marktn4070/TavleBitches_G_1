@@ -13,7 +13,7 @@ DirectionPin1 = 13
 DirectionPin2 = 29
 DirectionPin3 = 31
 
-linefollower1 = 16
+linefollower1 = 15
 linefollower2 = 18
 
 GPIO.setwarnings(False)			#disable warnings
