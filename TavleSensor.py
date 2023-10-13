@@ -130,7 +130,7 @@ def press(key):
         TurnRight()
     if key == "f":
         StopBil()
-    else:
+    if key == "":
         StopBil()
         print("Vent")
 
