@@ -105,8 +105,9 @@ try:
             koer()
         elif((linefollower1 == 0) and (linefollower2 == 1)):
             dven()
-        #else:
-        #    koer()
+        else:
+            koer()
+            print("FEJL")
 except KeyboardInterrupt:
   pass
 GPIO.cleanup()
